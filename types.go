@@ -34,6 +34,7 @@ type Rules struct {
 	PPE                bool
 	Executor_count     int
 	Random_seed        int
+	Logging_mode       int       // Log (0: none, 1: callbacks, 2: chains)
 }
 
 
