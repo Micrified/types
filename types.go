@@ -118,7 +118,6 @@ type Work struct {
 	Iterations         int
 }
 
-
 func (b *Benchmarks) ReadFrom (filename string) error {
 	buffer, err := ioutil.ReadFile(filename)
 	if nil != err {
