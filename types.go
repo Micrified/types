@@ -31,7 +31,7 @@ type Rules struct {
 	Period_step_us     float64
 	Hyperperiod_count  int
 	Max_duration_us    int
-	PPE                bool
+	PPE                int       // PPE (0: none, 1: producer-consumer, 2: thread-dispatch)
 	Executor_count     int
 	Random_seed        int
 	Logging_mode       int       // Log (0: none, 1: callbacks, 2: chains)
@@ -61,7 +61,7 @@ type Trace struct {
 	Merge_p             float64  // Merge probability used in system
 	Sync_p              float64  // Sync probability used in system
 	Variance            float64  // Variance (chain length) used
-	PPE                 int      // Nonzero if PPE was used
+	PPE                 int      // PPE (0: none, 1: producer-consumer, 2: thread-dispatch)
 	Executors           int      // Number of executors in the system
 }
 
